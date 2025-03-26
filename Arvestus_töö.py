@@ -36,8 +36,6 @@ while True:
         print(commission(opilased, puudumised))
     elif valik==4:
         print(exclude(opilased, puudumised))
-    elif valik==5:
-        
     elif valik==6:
         break
     else:

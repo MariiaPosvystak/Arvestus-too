@@ -17,11 +17,11 @@ def kool(opilane: str, puudub:int)->any:
     :return: õpilased ja nende puud
     """
     while True:
-        opilane=str(input("Введите имя ученика "))
+        opilane=str(input("Sisestage õpilase nimi "))
         if opilane.lower()=="stop":
             print(opilased, puudumised)
             break
-        puudub=int(input("Введите сколько у него пропусков "))
+        puudub=int(input("Sisestage, mitu puudub tal on "))
         opilased.append(opilane)
         puudumised.append(puudub)
         
@@ -32,7 +32,7 @@ def top_n(n: int)->any:
     :param n: õpilaste arv
     :return: n parimat õpilast
     """
-    n=int(input("Введите количество лучших учеников которое вы хотите увидеть"))
+    n=int(input("Sisestage tippõpilaste arv, mida soovite näha"))
     sort_opilased=sorted(zip(opilased, puudumised))
     k=sort_opilased[:n]
     return k
