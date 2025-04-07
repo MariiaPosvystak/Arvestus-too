@@ -17,7 +17,7 @@ def kool(opilane: str, puudub:int)->any:
     :return: õpilased ja nende puud
     """
     while True:
-        opilane=str(input("Sisestage õpilase nimi (või 'stop' lõpetada nimede sisestamine"))
+        opilane=str(input("Sisestage õpilase nimi (või 'stop' lõpetada nimede sisestamine) "))
         if opilane.lower()=="stop":
             print(opilased, puudumised)
             break
@@ -33,7 +33,7 @@ def top_n(n: int)->any:
     :return: n parimat õpilast
     """
     n=int(input("Sisestage tippõpilaste arv, mida soovite näha"))
-    sort_opilased=sorted(zip(opilased, puudumised))
+    sort_opilased=sorted(zip(puudumised, opilased))
     k=sort_opilased[:n]
     return k
 
@@ -43,7 +43,7 @@ def sort()->any:
     :return: sorteeritud õpilased ja nende puudumised
     """
     sort_puudumised=sorted(zip(opilased, puudumised))
-    return sort_puudumised
+    return 
 
 # Вывести список учеников отправленных на комиссию ( критерий придумать самостоятельно)
 def commission()->any:
