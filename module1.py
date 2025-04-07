@@ -17,7 +17,7 @@ def kool(opilane: str, puudub:int)->any:
     :return: õpilased ja nende puud
     """
     while True:
-        opilane=str(input("Sisestage õpilase nimi "))
+        opilane=str(input("Sisestage õpilase nimi (või 'stop' lõpetada nimede sisestamine"))
         if opilane.lower()=="stop":
             print(opilased, puudumised)
             break

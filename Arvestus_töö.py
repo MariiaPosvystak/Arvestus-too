@@ -16,7 +16,7 @@ print(kool(opilased, puudumised))
 
 # После заполнения списков появляется меню с выбором действий
 # Меню с выбором действий
-print("\nMennu")
+print("Mennu: ")
 print("1. Leia välja n parimat õpilast")
 print("2. Korraldage nimekiri puudumiste kasvavas järjekorras. kuvage puudumised koos õpilaste nimedega")
 print("3. Prindi komisjonile saadetud õpilaste nimekiri („Koosta oma kriteeriumid")
