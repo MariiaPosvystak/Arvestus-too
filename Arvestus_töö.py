@@ -20,8 +20,7 @@ print("Mennu: ")
 print("1. Leia välja n parimat õpilast")
 print("2. Korraldage nimekiri puudumiste kasvavas järjekorras. kuvage puudumised koos õpilaste nimedega")
 print("3. Prindi komisjonile saadetud õpilaste nimekiri („Koosta oma kriteeriumid")
-print("4. Kandke välja (eemaldage nimekirjast) õpilased, kellel on üle 100 puudumise")
-print("5. Teie enda variant")
+print("4. Õpilased, kellele tuleb saata hoiatuskiri väljasaatmise kohta")
 print("6. Väljumine")
 while True:
     try:
@@ -36,6 +35,9 @@ while True:
         print(commission(opilased, puudumised))
     elif valik==4:
         print(exclude(opilased,puudumised))
+    elif valik==5:
+        print("Saada hoiatus kiri")
+        print(my_variant(opilased, puudumised))
     elif valik==6:
         break
     else:

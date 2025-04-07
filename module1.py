@@ -68,3 +68,11 @@ def exclude()->any:
             return opilased, puudumised
 
 # Свой вариант
+def my_variant()->any:
+    """ Õpilased, kellel on puudumised vähem kui 95 saata hoiatuskiri
+    :return: õpilased ja nende puudumised, kes saadetakse hoiatuskiri
+    """
+    k=zip(opilased,puudumised)
+    for opilased, puudumised in k:
+        if puudumised<95:
+            return opilased, puudumised
